@@ -51,13 +51,19 @@ class DropDownList extends React.Component {
 		})
 	}
 
+	clickOut = () => {
+		this.setState({
+			showList: false
+		})
+	}
+
 	render() {
 
 		const {input, selected, showList} = this.state
 		const {names} = this.props
 
 		return (
-			<ClickOutHandler onClickOut={this.handleList}>
+			<ClickOutHandler onClickOut={this.clickOut}>
 				<div>
 					<div onClick={this.handleList} className="selectDrop">{selected}</div>
 					{showList && <div className="dropDown">
