@@ -48,3 +48,11 @@ ul {
 .separator {
 	margin-bottom: 100px;
 }
+
+.flexSection {
+	display: flex
+}
+
+.marginLeft {
+	margin-left: 10%;
+}
