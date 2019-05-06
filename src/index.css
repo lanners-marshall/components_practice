@@ -13,7 +13,34 @@ code {
     monospace;
 }
 
+.center {
+	text-align: center;
+}
+
 .app {
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.flexBox {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.dropDown {
+	max-height: 100px;
+	overflow: scroll;
+	border: solid black 1px;
+	margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selectDrop {
+	width: 133px;
+	border: solid black 1px;
+	text-align: center;
 }

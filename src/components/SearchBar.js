@@ -26,6 +26,7 @@ class SearchBar extends React.Component {
 					value={search}
 					onChange={this.handleText}
 					autoComplete="off"
+					placeholder="search Names"
 				/>
 				{search && <ul>
 					{names.filter(name => { return name.toLowerCase().includes(search.toLowerCase())}).map((name, i) => {

@@ -1,5 +1,6 @@
 import React from 'react';
-import SearchBar from './components/SearchBar'
+import SearchBar from './components/SearchBar';
+import DropDownList from './components/DropDownList';
 
 const names = [
 	'Marshall',
@@ -9,14 +10,21 @@ const names = [
 	'Mitchel',
 	'Roberto',
 	"Ann Mary",
-	'Xue'
+	'Xue',
+	'timmy',
+	'tommon',
+	"Jessica",
+	"Sampson"
 ]
 
 function App() {
   return (
     <div className="app">
-    	<h1>Components Practice</h1>
-    	<SearchBar names={names}/>
+    	<h1 className="center">Components Practice</h1>
+    	<div className="flexBox">
+	    	<SearchBar names={names}/>
+	    	<DropDownList names={names} />
+	    </div>
     </div>
   );
 }
