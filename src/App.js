@@ -3,6 +3,7 @@ import SearchBar from './components/SearchBar';
 import DropDownList from './components/DropDownList';
 import MultiSelect from './components/MultiSelect';
 import NumberPicker from './components/NumberPicker';
+import ToDoList from './components/ToDoList';
 
 const names = [
 	'Marshall',
@@ -32,6 +33,7 @@ function App() {
 	    	<DropDownList names={names} />
 	    	<MultiSelect names={names} />
 	    	<NumberPicker/>
+	    	<ToDoList/>
 	    </div>
     </div>
   );

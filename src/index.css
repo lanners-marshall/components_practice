@@ -56,3 +56,9 @@ ul {
 .marginLeft {
 	margin-left: 10%;
 }
+
+.flexCenter {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
