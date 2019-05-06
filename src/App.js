@@ -1,6 +1,8 @@
 import React from 'react';
 import SearchBar from './components/SearchBar';
 import DropDownList from './components/DropDownList';
+import MultiSelect from './components/MultiSelect';
+import NumberPicker from './components/NumberPicker';
 
 const names = [
 	'Marshall',
@@ -14,16 +16,22 @@ const names = [
 	'timmy',
 	'tommon',
 	"Jessica",
-	"Sampson"
+	"Sampson",
+	"Stannis",
+	"Nicole",
+	"Nick",
+	"Merlin"
 ]
 
 function App() {
   return (
     <div className="app">
     	<h1 className="center">Components Practice</h1>
-    	<div className="flexBox">
+    	<div className="flexBox separator">
 	    	<SearchBar names={names}/>
 	    	<DropDownList names={names} />
+	    	<MultiSelect/>
+	    	<NumberPicker/>
 	    </div>
     </div>
   );

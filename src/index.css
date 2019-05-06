@@ -44,3 +44,7 @@ ul {
 	border: solid black 1px;
 	text-align: center;
 }
+
+.separator {
+	margin-bottom: 100px;
+}
