@@ -30,7 +30,7 @@ function App() {
     	<div className="flexBox separator">
 	    	<SearchBar names={names}/>
 	    	<DropDownList names={names} />
-	    	<MultiSelect/>
+	    	<MultiSelect names={names} />
 	    	<NumberPicker/>
 	    </div>
     </div>

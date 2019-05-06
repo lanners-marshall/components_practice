@@ -33,9 +33,7 @@ class DropDownList extends React.Component {
 	}
 
 	handleInput = (event) => {
-		this.setState({
-			[event.target.name]: event.target.value
-		})
+		this.setState({[event.target.name]: event.target.value})
 	}
 
 	handleSelected = (name) => {
