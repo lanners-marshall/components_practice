@@ -4,6 +4,23 @@ import DropDownList from './components/DropDownList';
 import MultiSelect from './components/MultiSelect';
 import NumberPicker from './components/NumberPicker';
 import ToDoList from './components/ToDoList';
+import hoc from './components/hoc';
+
+
+const Counter = (props) => {
+	return (
+		<div><p>{props.counter} <span onClick={props.upCounter}>UP</span></p></div>
+	)
+}
+
+const CounterTwo = ({counter, upCounter}) => {
+	return (
+		<div><p>{counter} <span onClick={upCounter}>UP</span></p></div>
+	)
+}
+
+const HOCounter = hoc(Counter)
+const HOCounterTwo = hoc(CounterTwo)
 
 const names = [
 	'Marshall',
@@ -34,6 +51,10 @@ function App() {
 	    	<MultiSelect names={names} />
 	    	<NumberPicker/>
 	    	<ToDoList/>
+	    </div>
+	    <div className="flexBox separator">
+	    	<HOCounter/>
+	    	<HOCounterTwo/>
 	    </div>
     </div>
   );
