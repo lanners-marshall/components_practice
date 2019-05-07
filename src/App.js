@@ -7,9 +7,9 @@ import ToDoList from './components/ToDoList';
 import hoc from './components/hoc';
 
 
-const Counter = (props) => {
+const Counter = ({counter, upCounter}) => {
 	return (
-		<div><p>{props.counter} <span onClick={props.upCounter}>UP</span></p></div>
+		<div><p>{counter} <span onClick={upCounter}>UP</span></p></div>
 	)
 }
 

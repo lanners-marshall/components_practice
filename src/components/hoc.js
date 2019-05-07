@@ -9,17 +9,15 @@ const hoc = (Wrappedcomponent) => class extends React.Component {
 	}
 
 	upCounter = () => {
-	  this.setState((prevState, props) => {
-	    return { 
-	        counter: prevState.counter + 1 
-	    };
-	  });
+		this.setState({
+			counter: this.state.counter + 1
+		})
 	}
 
 	render(){
 		return (
 			<div>
-				<Wrappedcomponent {...this.state} upCounter={this.upCounter}/>
+				<Wrappedcomponent counter={this.state.counter} upCounter={this.upCounter}/>
 			</div>
 		)
 	}
