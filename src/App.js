@@ -5,6 +5,8 @@ import MultiSelect from './components/MultiSelect';
 import NumberPicker from './components/NumberPicker';
 import ToDoList from './components/ToDoList';
 import hoc from './components/hoc';
+import Table from './components/Table';
+import NavTabs from './components/NavTabs'
 
 
 const Counter = ({counter, upCounter}) => {
@@ -55,6 +57,8 @@ function App() {
 	    <div className="flexBox separator">
 	    	<HOCounter/>
 	    	<HOCounterTwo/>
+	    	<Table />
+	    	<NavTabs/>
 	    </div>
     </div>
   );

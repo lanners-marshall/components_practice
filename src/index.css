@@ -62,3 +62,7 @@ ul {
 	align-items: center;
 	justify-content: center;
 }
+
+.redBg {
+	background-color: red;
+}
