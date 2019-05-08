@@ -10,6 +10,7 @@ class Table extends React.Component {
 
 	render(){
 		return (
+			<div>
 			<table>
 				<caption>A complex table</caption>
 				<thead>
@@ -68,6 +69,25 @@ class Table extends React.Component {
 					</tr>
 				</tfoot>
 			</table>
+			<table>
+				<caption>Names List</caption>
+				<tr>
+					<th>First name:</th>
+					<th>Last name:</th>
+					<th>Gender</th>
+				</tr>
+				<tr>
+					<td>Daniel</td>
+					<td>Nielson</td>
+					<td>Male</td>
+				</tr>
+				<tr>
+					<td>Jane</td>
+					<td>Doe</td>
+					<td>Female</td>
+				</tr>
+			</table>
+			</div>
 		)
 	}
 }
