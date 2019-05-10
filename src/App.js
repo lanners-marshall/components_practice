@@ -10,7 +10,6 @@ import NavTabs from './components/NavTabs';
 import DynamicTable from './components/DynamicTable';
 import TableTwo from './components/TableTwo';
 
-
 const Counter = ({counter, upCounter}) => {
 	return (
 		<div><p>{counter} <span onClick={upCounter}>UP</span></p></div>
